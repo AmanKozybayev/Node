@@ -15,3 +15,4 @@ function sqrfndr (array) {
 }
 sqrfndr(ar);// done 
 
+//
