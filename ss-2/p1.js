@@ -13,7 +13,7 @@ const myCar = Object.create(myObj); // kogda ya sozdayu object cherez const mozh
 myCar.car = "bad";
 console.log(myCar);//logs: { car: 'bad' }
 
-myCar.myMethod('car');
+myCar.myMethod('car'); //logs: Everything is bad
 
 
 
