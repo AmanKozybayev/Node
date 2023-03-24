@@ -25,7 +25,7 @@ rl.question('Please input first number : ', (num1) => {
                 default: 
                 console.log('Invalid operator!');
                 rl.close();
-                return;
+                
             }
             console.log(`The result is ${result}`);
             rl.close();
