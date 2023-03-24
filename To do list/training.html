@@ -1,0 +1,45 @@
+<!--
+    Finding HTML Elements
+
+    Method:
+
+    document.getElementById(id) -- find an element by element id
+    document.getElementsByTagName(name) -- find elements by tag name
+    document.getElementsByClassName(name) -- Find elements by class name
+-->
+
+<!--
+    changing HTML Elements
+    
+    Property: 
+    element.innerHTML = new html content -- change the inner html of an element (between tags)
+    element.attribute = new value  -- change the attribute value of an HTML element
+    elemetn.style.property = new style -- change the style of an HTML element 
+
+    method: 
+    element.setAttribute(attribute,value) -- change the attribute value of an HTML element
+-->
+<!--
+    Adding and Deleting Elements 
+
+    Method 
+    document.createElement(element) -- create an HTML element 
+    document.removeChild(element) -- Remove an HTML element
+    document.appendChild(element) -- Add na HTML elelment
+    document.replaceChild(new,old) -- Replace an HTML element 
+    document.write(text) --- write into the HTML output stream 
+-->
+
+<html>
+    <body>
+        <h1 id="header">Finding HTML elemet by id</h1>
+        <h2> JavaScript HTML DOM</h2>
+        <p id="intro">this is the paragraph - its index [0] </p>
+        <p>this example demonstrates <b>getElementsById</b> method</p>
+
+        <script>
+            const element = document.getElementById("header");
+            document.getElementById("intro").innerHTML = "I want to change first paragraph" + element.innerHTML;
+        </script>
+    </body>
+</html>
